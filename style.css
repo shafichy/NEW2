@@ -1,0 +1,117 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.hero-section{
+    background-image: url("developer.png");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text{
+    color:white;
+max-width: 900px; 
+margin:0 auto;
+padding-top: 64px;
+padding-left: 10px;
+
+}
+.lg {
+    font-size: 70px;
+}
+.lg1{
+    font-size: 30px;
+}
+.hero-section1{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.hero-section1 h1{
+    font-size: 70px;
+}
+.hero-section2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    margin-top: 20px;
+}
+.grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 400px;
+    width: 320px;
+    box-shadow: 3px 4px 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+    
+}
+.card:hover{
+    transform: scale(1.04);
+    transition: 0.3s;
+}
+.details{
+    padding:20px;
+}
+.details h3{
+    margin-bottom: 10px;
+}
+.hero-section3{
+    margin-top:40px;
+    display: flex;
+}
+.contact{
+    background-color: #515603;
+    color:white;
+    padding:30px;
+}
+.contact h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.about{
+    background-color: #722300;
+    color:white;
+    padding: 30px;
+}
+.about h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+footer{
+    background-color: black;
+    color:white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+@media (max-width:650px){
+    .hero-section{
+        min-height: 100vh;
+    }
+    .text{
+        padding:10px 0;
+        text-align: center;
+    }
+    .lg{
+        font-size:32px; 
+    }
+    .hero-section1 h2{
+        font-size:30px;
+    }
+    .hero-section3{
+    display: flex;
+    flex-direction: column;
+    }
+    .footer{
+        font-size: 20px;
+    }
+}
